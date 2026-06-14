@@ -188,7 +188,34 @@ function BannerSchool() {
   );
 }
 
-const PROJECT_BANNERS = [BannerZashaNotes, BannerDairyHauling, BannerSkyNet, BannerUMS, BannerELearning, BannerSchool];
+function BannerWhatsAppSupport() {
+  return (
+    <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%", display: "block" }}>
+      <rect width="400" height="180" fill="#0f1b17" />
+      <circle cx="320" cy="40" r="90" fill="#3cd69812" />
+      <circle cx="85" cy="145" r="70" fill="#6EE7B70d" />
+      <rect x="78" y="34" width="168" height="112" rx="16" fill="#13251f" stroke="#3cd69855" strokeWidth="1.5" />
+      <rect x="92" y="48" width="140" height="22" rx="11" fill="#3cd69818" />
+      <circle cx="109" cy="59" r="7" fill="#3cd698" />
+      <path d="M105 59 l3 3 l6 -7" fill="none" stroke="#0f1b17" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+      <text x="126" y="63" fontFamily="monospace" fontSize="9" fill="#3cd698" letterSpacing="1">SUPPORT ACTIVE</text>
+      <rect x="92" y="80" width="106" height="16" rx="8" fill="#ffffff10" />
+      <rect x="92" y="104" width="126" height="16" rx="8" fill="#ffffff0d" />
+      <rect x="92" y="128" width="88" height="16" rx="8" fill="#ffffff08" />
+      <circle cx="286" cy="88" r="34" fill="#3cd69816" stroke="#3cd69855" strokeWidth="2" />
+      <path d="M271 87c0-10 8-18 18-18s18 8 18 18-8 18-18 18c-2 0-4 0-6-1l-8 5 2-7c-4-3-6-8-6-15z" fill="#3cd698" />
+      <path d="M278 82c2 8 8 13 16 15" fill="none" stroke="#0f1b17" strokeWidth="2.6" strokeLinecap="round" />
+      <path d="M286 94c2 0 4-1 5-2" fill="none" stroke="#0f1b17" strokeWidth="2.6" strokeLinecap="round" />
+      <circle cx="300" cy="30" r="4" fill="#6EE7B7" />
+      <circle cx="312" cy="42" r="2.5" fill="#93C5FD" />
+      <circle cx="70" cy="145" r="3" fill="#3cd698" opacity="0.7" />
+      <circle cx="90" cy="154" r="2" fill="#3cd698" opacity="0.5" />
+      <text x="258" y="148" fontFamily="monospace" fontSize="10" fill="#3cd69880" letterSpacing="2">WHATSAPP</text>
+    </svg>
+  );
+}
+
+const PROJECT_BANNERS = [BannerZashaNotes, BannerDairyHauling, BannerSkyNet, BannerUMS, BannerELearning, BannerSchool, BannerWhatsAppSupport];
 
 const PROJECTS = [
   {
@@ -207,19 +234,24 @@ const PROJECTS = [
     tech: ["C++", "Data Structures", "Algorithms"], color: "#FCA5A5",
   },
   {
-    id: 4, title: "University Management System", tag: "ERP Platform", period: "2024",
+    id: 4, title: "University Management System", tag: "ERP Platform", period: "2025",
     desc: "A comprehensive university management ERP covering student enrollment, faculty management, course scheduling, grade tracking, and department administration in one unified platform.",
     tech: ["PHP", "Laravel", "MySQL", "React"], color: "#C4B5FD",
   },
   {
-    id: 5, title: "E-Learning System", tag: "Education Platform", period: "2024",
+    id: 5, title: "E-Learning System", tag: "Education Platform", period: "2026",
     desc: "An interactive e-learning platform with course creation tools, video content delivery, quizzes, progress tracking, and certificate generation for both instructors and learners.",
     tech: ["Laravel", "React", "MySQL", "REST APIs"], color: "#FDE68A",
   },
   {
-    id: 6, title: "School Management System", tag: "Admin Dashboard", period: "2024",
+    id: 6, title: "School Management System", tag: "Admin Dashboard", period: "2026",
     desc: "An admin-oriented school management solution covering attendance, fee collection, timetable management, exam results, teacher assignments, and real-time parent notifications.",
     tech: ["PHP", "MySQL", "Laravel", "jQuery"], color: "#6EE7B7",
+  },
+  {
+    id: 7, title: "Whatsapp Customer Support Agent", tag: "n8n Customer Support", period: "2026",
+    desc: "A customer support agent for handling whatsapp communications, managing inquiries, and providing real-time assistance to users.",
+    tech: ["n8n", "Whatsapp", "MySQL"], color: "#3cd698",
   },
 ];
 
@@ -237,6 +269,7 @@ const SKILLS = [
   { name: "C++", level: 72 },
   { name: "REST APIs", level: 83 },
   { name: "Data Structures", level: 75 },
+  { name: "Automation n8n", level: 78 },
 ];
 
 const SOFT_SKILLS = ["Problem-Solving","Negotiation","Time Management","Communication","Team Leadership","Critical Thinking"];
